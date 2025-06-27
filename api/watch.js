@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await fetch(
-      `https://sonix-movies-v2.vercel.app/api/watch?type=${encodeURIComponent(type)}&id=${encodeURIComponent(id)}&header=02movie`
+      `https://sonix-movies-v2-beta.vercel.app/api/watch?type=${encodeURIComponent(type)}&id=${encodeURIComponent(id)}&header=02movie`
     );
 
     const contentType = response.headers.get('content-type');
